@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spectacle Media</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 20px 0;
+  max-width: 500px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #6c5ce7;
+  margin-right: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+/* SERVICES */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PORTFOLIO */
+.filters button {
+  margin: 5px;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SOCIAL SHOWCASE */
+.social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+/* VIDEO */
+.video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="./images/Logo/logo.png" width="70" height="100">
+  <h1>Spectacle Media</h1>
+  <p>We design visuals, manage brands, and create AI-powered content that drives results.</p>
+  <div>
+    <a href="#portfolio" class="btn">View Work</a>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2>About</h2>
+  <p>We help brands grow visually and digitally through design, social media strategy, and AI-driven content.</p>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Graphic Design</h3>
+      <p>Logos, flyers, branding.</p>
+    </div>
+    <div class="card">
+      <h3>Social Media</h3>
+      <p>Growth, strategy, engagement.</p>
+    </div>
+    <div class="card">
+      <h3>Video Content</h3>
+      <p>AI videos, reels, ads.</p>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>Professional company websites, Mobile/Web App.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="filters">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('design')">Design</button>
+    <button onclick="filterSelection('social')">Social</button>
+    <button onclick="filterSelection('video')">Video</button>
+  </div>
+
+  <div class="portfolio">
+    <img src="./images/Design/orangegey.png" class="item design">
+    <img src="./images/Design/enugu.png" class="item design">
+    <img src="./images/Design/kogi.png" class="item design">
+    <img src="./images/Design/lpress.png" class="item design">
+    <img src="./images/Design/mockup1.jpg" class="item design">
+    <img src="./images/Design/mockup2.jpg" class="item design">
+    <img src="./images/Design/mockup3.jpg" class="item design">
+    <img src="./images/Design/package.png" class="item design">
+    <img src="./images/Design/store.png" class="item design">
+    <img src="./images/Design/womens.png" class="item design">
+    <img src="./images/Social/cpi.png" class="item social">
+    <img src="./images/Social/gracefm.png" class="item social">
+    <img src="./images/Social/weegc.png" class="item social">
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA SHOWCASE -->
+<section>
+  <h2>Social Media Projects</h2>
+  <div class="social">
+    <div class="card">
+      <img src="./images/Social/weegc.png" width="100" height="100">
+      <h3>Women Electoral Engagement and Governace Coalition-WEEGC</h3>
+      <p>Growth: 100 → 1.3k followers</p>
+    </div>
+    <div class="card">
+      <img src="./images/Social/cpi.png" width="100" height="100">
+      <h3>Challenged Parenthood Initiative-CPI</h3>
+      <p>Growth: 400 → 1.5k followers</p>
+    </div>
+     <div class="card">
+      <img src="./images/Social/gracefm.png" width="100" height="100">
+      <h3>Grace95.5 FM</h3>
+      <p>Engagement Boosted</p>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section>
+  <h2>Video Content</h2>
+  <div class="video">
+    <iframe src="https://youtube.com/shorts/dYt6WUyLbl4?si=PHYcwlO3W1S7OyM0" class="item video"></iframe>
+  </div>
+  <div class="video">
+    <iframe src="https://youtube.com/shorts/kQpgp9fRmBc?si=X80wEpDHNF1zxG3Y" class="item video"></iframe>
+  </div>
+  <div class="video">
+    <iframe src="https://youtube.com/shorts/zZgAE9qgX-I?si=KjVowVP_Al5IA1KW" class="item video"></iframe>
+  </div>
+  <div class="video">
+    <iframe src="https://youtube.com/shorts/VU8swRKj4eU?si=xOn9-lWIdjEhqfjR" class="item video"></iframe>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <h2>Let’s grow your brand</h2>
+  <a href="https://api.whatsapp.com/send?phone=2348101760666" class="btn">WhatsApp</a>
+  <a href="mailto:moshoodabdulkarim@gmail.com" class="btn">Email</a>
+</section>
+
+<footer>
+  <p>© 2026 Spectacle Media</p>
+</footer>
+
+<script>
+function filterSelection(category) {
+  let items = document.getElementsByClassName("item");
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.display = "none";
+    if (category === "all" || items[i].classList.contains(category)) {
+      items[i].style.display = "block";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
